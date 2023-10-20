@@ -20,9 +20,18 @@
     1) Array
     2) Objects
     3) Functions
-    
-
-
 
 
 */
+
+//  ***************************************************************************
+
+//   Stack - Memory (Primitive) , heap - Memory (Non - Primitive)
+
+let myYouTubeChannel = "vikashsharmadotcom";
+let anotherChannel = "sharmaJeCoder";
+
+console.log(myYouTubeChannel); // this return  vikashsharmadotcom
+console.log(anotherChannel); // this retun sharmaJeCoder
+
+// why becouse due to stack  => becouse it pass only copy value
