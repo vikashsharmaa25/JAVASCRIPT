@@ -1,6 +1,6 @@
 // console.log(2 > 1);
 // console.log(2 >= 2);
-// console.log(2 === 2);
+// console.log(2 === 2); // its check data type as well as value
 // console.log(2 == 2);
 // console.log(2 != 2);
 
@@ -10,4 +10,4 @@
 
 console.log(null > 0); // false
 console.log(null == 0); // false
-console.log(null >= 0); // true 
+console.log(null >= 0); // true
