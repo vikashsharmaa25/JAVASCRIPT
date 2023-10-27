@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Peaker Project First</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .main {
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      flex-wrap: wrap;
+      width: 100vw;
+      min-height: 100vh;
+      gap: 10px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+    .button {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      cursor: pointer;
+    }
+    #Gray {
+      background: gray;
+    }
+    #Yellow {
+      background: Yellow;
+    }
+    #White {
+      background: White;
+    }
+    #Blue {
+      background: Blue;
+    }
+  </style>
+  <body>
+    <div class="main">
+      <span class="button" id="Gray">Gray</span>
+      <span class="button" id="Yellow">Yellow</span>
+      <span class="button" id="White">White</span>
+      <span class="button" id="Blue">Blue</span>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

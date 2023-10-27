@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom | chai aur code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff; font-size: 20px">
+    <div class="parent">
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    /*  console.log(parent);
+    console.log(parent.children);
+    console.log(parent.children[1]); // now access first index value
+    console.log(parent.children[1].innerHTML);
+
+    console.log("print all element using loop");
+
+    for (let i = 0; i < parent.children.length; i++) {
+      const element = parent.children[i].innerHTML;
+      console.log("all element are => ", element);
+    }
+
+    parent.children[1].style.background = "red";
+
+    console.log(parent.firstElementChild); // this is first  element your data
+    console.log(parent.lastElementChild); // this is  last element your data
+*/
+    // if you find to child to parent
+    const day = document.querySelector(".day");
+    // console.log(day);
+    console.log(day.parentElement); // its give parent div of this child
+  </script>
+</html>

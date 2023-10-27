@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM || Chai aur Code</title>
+  </head>
+  <body style="background-color: #212121; color: #fff; font-size: 20px">
+    <ul class="language">
+      <li>JavaScript</li>
+    </ul>
+  </body>
+  <script>
+    // in this code traverse all element then add li tage
+    function addLiTage(langName) {
+      const liTage = document.createElement("li");
+      liTage.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(liTage);
+    }
+    addLiTage("python");
+    addLiTage("typeScript");
+
+    // optimise way
+    function addOptLiTag(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(`${langName}`));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptLiTag("golang");
+
+    // edit
+    /* const ediText = document.querySelector("li:nth-child(2)");
+    console.log(ediText);
+    // this is first way
+    // ediText.innerHTML = "mojo";
+
+    // this is second way
+    const newLi = document.createElement("li");
+    newLi.textContent = "mojo";
+    ediText.replaceWith(newLi);
+
+    // this is second way
+    const li = document.querySelector("li:nth-child(1)");
+    li.outerHTML = "<li>react</li>"; */
+
+    // for remove ==> line li golang tha usko remove kar diya
+    const li = document.querySelector("li:last-child");
+    li.remove();
+  </script>
+</html>
